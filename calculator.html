@@ -2,16 +2,22 @@
 <title>Calculadora</title><meta charset="utf-8">
 <script type="text/javascript">
 
-function square() {
+function cuadrado() {
   var num = document.getElementById("n1");
   num.value = num.value * num.value;
+}
+
+function inverso() {
+  var num = document.getElementById("n1");
+  num.value = 1/num.value;
 }
 </script>
 </head>
 <body>
   Número:
-  <input type="text" id="n1" onclick="square()"><p>
+  <input type="text" id="n1"><p>
 
   <button onclick="cuadrado()"> x<sup>2</sup> </button>
+  <button onclick="inverso()"> 1/x </button>
 </body>
 </html>
